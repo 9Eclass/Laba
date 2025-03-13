@@ -1,0 +1,18 @@
+import math
+
+a = int(input("Введите длину стороны a: "))
+b = int(input("Введите длину b: "))
+
+def perimeter(a,b):
+    return 2 * (a + b)
+    
+def area(a,b):
+    return a * b
+    
+def diagonal(a,b):
+    return math.sqrt(a**2 + b**2)
+    
+
+print("Периметр:" ,perimeter(a,b))
+print("Площадь:", area(a,b))
+print("Диагональ:", diagonal(a,b))
